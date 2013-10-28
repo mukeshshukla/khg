@@ -44,7 +44,7 @@ if (!empty($isuser)) {
             round
             )
             VALUES (
-            '" . $_SESSION['uid'] . "',  '" . $quesid . "',  '1', 
+            '" . $_SESSION['uid'] . "',  '" . $quesid . "',  '2', 
             '" . $ans_time . "' ,  '1'
             )";
             mysql_query($insrt_query);
@@ -58,7 +58,7 @@ if (!empty($isuser)) {
             )
             VALUES (
             '" . $_SESSION['uid'] . "',  '" . $quesid . "',  '0', 
-            '" . $ans_time . "' ,  '1'
+            '" . $ans_time . "' ,  '2'
             )";
             mysql_query($insrt_query);
         }

@@ -44,7 +44,7 @@ if ($_SESSION['token'] !== md5($_SESSION['email'] . session_id())) {
 
         <form name="ques" method="post" action="save_ques.php" class="form-horizontal levelForm">
 <?php
-$select_ques = "select * from questions where level = 1 order by rand() limit 10";
+$select_ques = "select * from questions where level = 2 order by rand() limit 5";
 
 $res = mysql_query($select_ques);
 $i=0;
