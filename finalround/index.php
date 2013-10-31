@@ -38,17 +38,18 @@
 <div class="container">
         <h1>Welcome to KHG</h1>
 
+        <form name="ques" method="post" action="start.php" class="form-horizontal levelForm">
 
     <div class="control-group">
-        <h1>Results for rounds</h1>
+        <h1>Welcome the final Round of KHG</h1>
     <div class="controls">
                     </div>
                 </div>
             <div class="control-group">
                 <div class="controls" style="text-align: center;">
-                    <input type="button" name="firstround" value="Show Results For First Round " onclick="window.location.href='shortlist.php?round=1'" />
-                <input type="button" name="secondround" value="Show Results For Second Round " onclick="window.location.href='shortlist.php?round=1'" />
+                <input type="submit" name="submit" value="Start" />
             </div>
+        </form>
         </div>
 </div>
 </body>

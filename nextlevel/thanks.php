@@ -26,11 +26,11 @@
     <div id="wrapper">
         <header class="header">
             <div class="container">
-                <h2>Banner</h2>
+                <h2>Kaun hai Genius</h2>
             </div>
         </header>
         <div class="container">
-            <h1>Welcome to KHG</h1>
+            
             <form class="form-horizontal levelForm">
                 <?php
                 if (isset($_REQUEST['nasty'])) {

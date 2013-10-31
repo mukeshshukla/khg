@@ -21,7 +21,7 @@ if ($time_stamp > 600) {
 $res = mysql_query("select count(uid) from user_correct_ans where uid ='" . $_SESSION['uid'] . "'");
 $isuser = mysql_fetch_row($res);
 
-if (!empty($isuser)) {
+if (!empty($isuser[0])) {
     header('location: thanks.php?nasty=true');
     die;
 } else {
@@ -44,7 +44,7 @@ if (!empty($isuser)) {
             round
             )
             VALUES (
-            '" . $_SESSION['uid'] . "',  '" . $quesid . "',  '2', 
+            '" . $_SESSION['uid'] . "',  '" . $quesid . "',  '1', 
             '" . $ans_time . "' ,  '1'
             )";
             mysql_query($insrt_query);

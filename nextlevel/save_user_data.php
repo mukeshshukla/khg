@@ -43,7 +43,7 @@ if (!empty($_SESSION['errors'])) {
             $_SESSION['access_start_time'] = $access_start_time ;
             
 
-            header('location: showq_level1.php');
+            header('location: showq_level2.php');
         } else {
 
             array_push($_SESSION['errors'], 'sorry, this application is very bad.');

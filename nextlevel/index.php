@@ -30,11 +30,11 @@ session_start();
 <div id="wrapper">
     <header class="header">
         <div class="container">
-            <h2>Banner</h2>
+            <h2>Kaun hai Genius</h2>
         </div>
     </header>
     <div class="container">
-        <h1>Welcome to KHG</h1>
+        
        
         <form class="form-horizontal loginForm" method="post" action="save_user_data.php" >
              <?php if(isset($_REQUEST['error'])):?>
@@ -52,13 +52,13 @@ session_start();
             <div class="control-group">
                 <label class="control-label" for="inputName">Full Name</label>
                 <div class="controls">
-                    <input type="text" id="inputName" placeholder="Full Name">
+                    <input type="text" name="name" id="inputName" placeholder="Full Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label" for="inputEmail">Email</label>
                 <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Email">
+                    <input type="text" name="email" id="inputEmail" placeholder="Email">
                     <input type="hidden" name="token" value="<?php echo session_id();?>">
                 </div>
             </div>
